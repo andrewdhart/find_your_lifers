@@ -1,0 +1,23 @@
+body{
+font-family:Arial;
+margin:10px;
+}
+
+#map{
+height:420px;
+margin-bottom:10px;
+}
+
+.controls{
+margin-bottom:10px;
+}
+
+ul{
+list-style:none;
+padding:0;
+}
+
+li{
+padding:6px;
+border-bottom:1px solid #ddd;
+}

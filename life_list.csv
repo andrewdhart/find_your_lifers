@@ -1,0 +1,317 @@
+Row #,Taxon Order,Category,Common Name,Scientific Name,Count,Location,S/P,Date,LocID,SubID,Exotic,Countable
+3,33563,species,Yellow-headed Blackbird,Xanthocephalus xanthocephalus,50,3200 West (SLC Airport to 3200 N),US-UT,05 Mar 2026,L474280,S306293153,,1
+6,694,species,Greater Scaup,Aythya marila,2,Lincoln Beach--Boat Launch Area,US-UT,02 Mar 2026,L1568467,S305441278,,1
+7,287,species,Greater White-fronted Goose,Anser albifrons,2,North Salem Marsh,US-UT,01 Mar 2026,L1508468,S305173043,,1
+8,21273,species,Pinyon Jay,Gymnorhinus cyanocephalus,10,Le Fevre Overlook,US-AZ,01 Mar 2026,L4381590,S304985512,,1
+9,7808,species,California Condor,Gymnogyps californianus,7,Glen Canyon NRA--Navajo Bridge,US-AZ,28 Feb 2026,L821559,S304787759,,1
+10,32085,species,Evening Grosbeak,Hesperiphona vespertina,20,Pyramid Ridge Trailhead,US-UT,28 Feb 2026,L46962920,S304616149,,1
+11,22155,species,Juniper Titmouse,Baeolophus ridgwayi,10,Pyramid Ridge Trailhead,US-UT,28 Feb 2026,L46962920,S304616149,,1
+12,741,species,Long-tailed Duck,Clangula hyemalis,1,Utah Lake SP,US-UT,25 Feb 2026,L283255,S303853252,,1
+13,384,species,Tundra Swan,Cygnus columbianus,5,Benjamin Slough,US-UT,23 Feb 2026,L729328,S303372216,,1
+14,6576,species,Lesser Black-backed Gull,Larus fuscus,1,River Lane--Sandy Beach,US-UT,23 Feb 2026,L1570131,S303365999,,1
+15,27288,species,Pacific Wren,Troglodytes pacificus,1,City Creek Canyon--Above Bonneville Blvd,US-UT,22 Feb 2026,L353655,S303580693,,1
+16,8292,species,American Goshawk,Astur atricapillus,1,City Creek Canyon--Above Bonneville Blvd,US-UT,22 Feb 2026,L353655,S303580693,,1
+17,32296,species,Gray-crowned Rosy-Finch,Leucosticte tephrocotis,3,Little Cottonwood Canyon--Alta Town Office Feeders,US-UT,21 Feb 2026,L5055453,S302866798,,1
+18,21484,species,Clark's Nutcracker,Nucifraga columbiana,2,Little Cottonwood Canyon--Alta Town Office Feeders,US-UT,21 Feb 2026,L5055453,S302866798,,1
+19,11427,species,Hairy Woodpecker,Leuconotopicus villosus,2,Little Cottonwood Canyon--Alta Town Office Feeders,US-UT,21 Feb 2026,L5055453,S302866798,,1
+20,32595,species,Pine Siskin,Spinus pinus,5,Provo City Cemetery,US-UT,19 Feb 2026,L230565,S302216037,,1
+21,11126,species,Yellow-bellied Sapsucker,Sphyrapicus varius,1,Provo City Cemetery,US-UT,19 Feb 2026,L230565,S302216037,,1
+22,748,species,Barrow's Goldeneye,Bucephala islandica,10,Glendale Golf Course,US-UT,18 Feb 2026,L433542,S302071361,,1
+23,8445,species,Harris's Hawk,Parabuteo unicinctus,1,Shelter Valley--general area,US-CA,16 Feb 2026,L17392109,S301478394,,1
+24,24106,species,Northern Rough-winged Swallow,Stelgidopteryx serripennis,2,Calipatria Algae Farm,US-CA,16 Feb 2026,L461291,S301432039,,1
+25,272,species,Ross's Goose,Anser rossii,2,Sonny Bono Salton Sea NWR--Vendel Rd.,US-CA,16 Feb 2026,L986378,S301377141,,1
+26,28069,species,Sage Thrasher,Oreoscoptes montanus,1,Joshua Tree NP--Arch Rock/White Tank area,US-CA,14 Feb 2026,L1193297,S300604325,,1
+27,27150,species,Rock Wren,Salpinctes obsoletus,1,Joshua Tree NP--Arch Rock/White Tank area,US-CA,14 Feb 2026,L1193297,S300604325,,1
+28,33018,species,Black-throated Sparrow,Amphispiza bilineata,3,Joshua Tree NP--Cholla Cactus Garden,US-CA,14 Feb 2026,L1000964,S300604157,,1
+29,33007,species,Brewer's Sparrow,Spizella breweri,15,Joshua Tree NP--Cholla Cactus Garden,US-CA,14 Feb 2026,L1000964,S300604157,,1
+30,6931,species,Pacific Loon,Gavia pacifica,3,Vacation Isle,US-CA,10 Feb 2026,L1415313,S299441702,,1
+31,730,species,White-winged Scoter,Melanitta deglandi,1,Vacation Isle,US-CA,10 Feb 2026,L1415313,S299441702,,1
+32,34357,species,Painted Redstart,Myioborus pictus,1,"stakeout Painted Redstart, Talmadge (2026)",US-CA,10 Feb 2026,L56856343,S299345913,,1
+33,34063,species,Northern Parula,Setophaga americana,1,Torrey Hills Park,US-CA,09 Feb 2026,L8317302,S299224495,,1
+34,7391,species,Pelagic Cormorant,Urile pelagicus,5,Imperial Beach Pier,US-CA,06 Feb 2026,L241906,S298451251,,1
+35,6927,species,Red-throated Loon,Gavia stellata,2,Imperial Beach Pier,US-CA,06 Feb 2026,L241906,S298451251,,1
+37,34346,species,Wilson's Warbler,Cardellina pusilla,1,Tijuana River Valley--Bird & Butterfly Garden (Myers Ranch),US-CA,04 Feb 2026,L418752,S298112335,,1
+38,7560,species,American Bittern,Botaurus lentiginosus,1,San Elijo Lagoon--west,US-CA,04 Feb 2026,L761141,S298062236,,1
+39,7724,species,Western Cattle-Egret,Ardea ibis,10,Konyn Dairy (private property),US-CA,03 Feb 2026,L1317633,S297925969,,1
+40,33962,species,Black-and-white Warbler,Mniotilta varia,1,San Elijo Lagoon--west,US-CA,03 Feb 2026,L761141,S297894015,,1
+41,24074,species,Violet-green Swallow,Tachycineta thalassina,1,San Elijo Lagoon--west,US-CA,03 Feb 2026,L761141,S297894015,,1
+42,6462,species,Bonaparte's Gull,Chroicocephalus philadelphia,1,Vacation Isle,US-CA,02 Feb 2026,L1415313,S297746686,,1
+43,728,species,Surf Scoter,Melanitta perspicillata,2,Vacation Isle,US-CA,02 Feb 2026,L1415313,S297746686,,1
+44,33770,species,Baltimore Oriole,Icterus galbula,1,Harry Griffen Regional Park,US-CA,29 Jan 2026,L859369,S296932018,,1
+45,32990,species,Chipping Sparrow,Spizella passerina,3,Harry Griffen Regional Park,US-CA,29 Jan 2026,L859369,S296932018,,1
+46,11130,species,Red-breasted Sapsucker,Sphyrapicus ruber,1,Harry Griffen Regional Park,US-CA,29 Jan 2026,L859369,S296932018,,1
+47,33807,species,Tricolored Blackbird,Agelaius tricolor,1,Santee Lakes,US-CA,29 Jan 2026,L192625,S296889788,,1
+49,33833,species,Brown-headed Cowbird,Molothrus ater,1,Kit Carson Park,US-CA,28 Jan 2026,L281194,S296865308,,1
+50,27412,species,Cactus Wren,Campylorhynchus brunneicapillus,2,Frank G. Bonelli RP/Puddingstone Reservoir and vicinity,US-CA,25 Jan 2026,L815817,S296243277,,1
+51,28062,species,Crissal Thrasher,Toxostoma crissale,1,Henderson Bird Viewing Preserve,US-NV,24 Jan 2026,L209342,S296017465,,1
+52,1105,species,Gambel's Quail,Callipepla gambelii,8,Henderson Bird Viewing Preserve,US-NV,24 Jan 2026,L209342,S296017465,,1
+53,12136,species,Prairie Falcon,Falco mexicanus,1,Goshen Fields,US-UT,22 Jan 2026,L729989,S295717436,,1
+54,8855,species,Western Screech-Owl,Megascops kennicottii,2,Highland Glen Park ,US-UT,20 Jan 2026,L506776,S295420870,,1
+55,33198,species,Harris's Sparrow,Zonotrichia querula,1,Utah Lake Parkway Trail (North Shore),US-UT,19 Jan 2026,L1509906,S295167052,,1
+56,33196,species,Golden-crowned Sparrow,Zonotrichia atricapilla,1,Utah Lake Parkway Trail (North Shore),US-UT,19 Jan 2026,L1509906,S295167052,,1
+57,9133,species,Burrowing Owl,Athene cunicularia,1,Antelope Island SP--Visitor Center & Loop Rd.,US-UT,18 Jan 2026,L1210098,S294958791,,1
+58,8528,species,Rough-legged Hawk,Buteo lagopus,1,Bird Refuge Rd.,US-UT,16 Jan 2026,L770872,S294537456,,1
+59,331,species,Cackling Goose,Branta hutchinsii,2,Lee Kay Ponds,US-UT,16 Jan 2026,L212323,S294504832,,1
+60,28163,species,Townsend's Solitaire,Myadestes townsendi,2,Slate Canyon,US-UT,15 Jan 2026,L1157195,S294378717,,1
+61,27184,species,Canyon Wren,Catherpes mexicanus,1,Slate Canyon,US-UT,15 Jan 2026,L1157195,S294378717,,1
+62,21309,species,Woodhouse's Scrub-Jay,Aphelocoma woodhouseii,2,Slate Canyon,US-UT,15 Jan 2026,L1157195,S294378717,,1
+63,512,species,Eurasian Wigeon,Mareca penelope,1,Timpanogos Golf Club,US-UT,14 Jan 2026,L280992,S294216779,,1
+64,568,species,Mexican Duck,Anas diazi,1,Lower Provo River Parkway--Oxbow to Lakeshore Dr.,US-UT,13 Jan 2026,L1397044,S294110082,,1
+65,8064,species,Golden Eagle,Aquila chrysaetos,1,Diamond Fork Canyon,US-UT,13 Jan 2026,L585698,S294093278,,1
+66,27668,species,American Dipper,Cinclus mexicanus,1,Provo River Trail--State St. to University Pkwy.,US-UT,13 Jan 2026,L11765023,S294079314,,1
+67,11127,species,Red-naped Sapsucker,Sphyrapicus nuchalis,1,Payson City Cemetery,US-UT,13 Jan 2026,L4097492,S294036867,,1
+68,8633,species,American Barn Owl,Tyto furcata,1,Payson City Cemetery,US-UT,13 Jan 2026,L4097492,S294036867,,1
+69,33344,species,Abert's Towhee,Melozone aberti,2,Tonaquint Nature Center,US-UT,11 Jan 2026,L208502,S293751210,,1
+70,26937,species,Red-breasted Nuthatch,Sitta canadensis,1,Tonaquint Nature Center,US-UT,11 Jan 2026,L208502,S293751210,,1
+71,11412,species,Ladder-backed Woodpecker,Dryobates scalaris,1,Tonaquint Nature Center,US-UT,11 Jan 2026,L208502,S293751210,,1
+72,455,species,Wood Duck,Aix sponsa,10,Tonaquint Nature Center,US-UT,11 Jan 2026,L208502,S293751210,,1
+73,7843,species,White-tailed Kite,Elanus leucurus,2,Batiquitos Lagoon--east end,US-CA,09 Jan 2026,L683111,S293365885,,1
+74,34439,species,Western Tanager,Piranga ludoviciana,1,San Diego Zoo Safari Park,US-CA,09 Jan 2026,L384938,S293332518,,1
+75,8535,species,Ferruginous Hawk,Buteo regalis,2,Ramona Grasslands Preserve--Wildflower Loop,US-CA,09 Jan 2026,L1344876,S293280353,,1
+76,33029,species,Lark Sparrow,Chondestes grammacus,20,Ramona Grasslands Preserve--Wildflower Loop,US-CA,08 Jan 2026,L1344876,S293173624,,1
+77,8498,species,Zone-tailed Hawk,Buteo albonotatus,1,San Diego Zoo Safari Park,US-CA,07 Jan 2026,L384938,S293019937,,1
+78,22710,species,Horned Lark,Eremophila alpestris,1,San Diego River mudflats (including Robb Field & Quivira Way),US-CA,07 Jan 2026,L506275,S292983889,,1
+79,6622,species,Black Skimmer,Rynchops niger,1,San Diego River mudflats (including Robb Field & Quivira Way),US-CA,07 Jan 2026,L506275,S292983889,,1
+80,6192,species,Dunlin,Calidris alpina,1,San Diego River mudflats (including Robb Field & Quivira Way),US-CA,07 Jan 2026,L506275,S292983889,,1
+81,27137,species,California Gnatcatcher,Polioptila californica,1,Tijuana River Valley--Bird & Butterfly Garden (Myers Ranch),US-CA,07 Jan 2026,L418752,S292969254,,1
+82,29909,species,Phainopepla,Phainopepla nitens,3,Kit Carson Park,US-CA,06 Jan 2026,L281194,S292807625,,1
+83,24064,species,Tree Swallow,Tachycineta bicolor,2,San Elijo Lagoon--west,US-CA,05 Jan 2026,L761141,S292683139,,1
+84,7591,species,Yellow-crowned Night Heron,Nyctanassa violacea,2,Tijuana Slough NWR--Visitor Center/North McCoy Trail,US-CA,03 Jan 2026,L3239468,S292180785,,1
+85,31076,species,Scaly-breasted Munia,Lonchura punctulata,1,Dairy Mart Ponds,US-CA,03 Jan 2026,L469000,S292149237,N,1
+86,700,species,Lesser Scaup,Aythya affinis,1,Lake Hodges--Del Dios area (west end),US-CA,02 Jan 2026,L109463,S291989188,,1
+87,19204,species,Hutton's Vireo,Vireo huttoni,1,San Elijo Lagoon--west,US-CA,02 Jan 2026,L761141,S291905508,,1
+88,5455,species,Sora,Porzana carolina,1,San Elijo Lagoon--west,US-CA,02 Jan 2026,L761141,S291905508,,1
+89,667,species,Redhead,Aythya americana,1,San Elijo Lagoon--west,US-CA,02 Jan 2026,L761141,S291905508,,1
+90,7431,species,Neotropic Cormorant,Nannopterum brasilianum,2,Sepulveda Basin--East of Woodley Ave,US-CA,29 Dec 2025,L194688,S291086461,,1
+91,21091,species,Loggerhead Shrike,Lanius ludovicianus,1,Big Tujunga Wash--NE of 210 Fwy including Haines pond area,US-CA,28 Dec 2025,L878629,S290838007,,1
+92,28054,species,California Thrasher,Toxostoma redivivum,2,Frank G. Bonelli RP--South and East Access,US-CA,28 Dec 2025,L4025297,S290800184,,1
+93,7791,species,American White Pelican,Pelecanus erythrorhynchos,1,Frank G. Bonelli RP--South and East Access,US-CA,28 Dec 2025,L4025297,S290800184,,1
+95,27362,species,Bewick's Wren,Thryomanes bewickii,1,Los Angeles River--Riverside Drive to I-5,US-CA,27 Dec 2025,L1532426,S290561791,,1
+96,12906,species,Lilac-crowned Amazon,Amazona finschi,4,Los Angeles River--Riverside Drive to I-5,US-CA,27 Dec 2025,L1532426,S290561791,N,1
+97,673,species,Ring-necked Duck,Aythya collaris,5,Los Angeles River--Riverside Drive to I-5,US-CA,27 Dec 2025,L1532426,S290561791,,1
+98,12114,species,Peregrine Falcon,Falco peregrinus,1,San Diego International Airport--SE Parking Lot,US-CA,22 Dec 2025,L735960,S289704400,,1
+99,12905,species,Red-crowned Amazon,Amazona viridigenalis,2,San Diego River mudflats (including Robb Field & Quivira Way),US-CA,22 Dec 2025,L506275,S289701174,N,1
+100,6866,species,Horned Grebe,Podiceps auritus,1,San Diego River mudflats (including Robb Field & Quivira Way),US-CA,22 Dec 2025,L506275,S289701174,,1
+101,6011,species,Hudsonian Whimbrel,Numenius hudsonicus,1,San Diego River mudflats (including Robb Field & Quivira Way),US-CA,22 Dec 2025,L506275,S289701174,,1
+102,24733,species,Red-whiskered Bulbul,Pycnonotus jocosus,1,Dunsmore Park,US-CA,21 Dec 2025,L4316980,S289552435,N,1
+103,27133,species,Black-tailed Gnatcatcher,Polioptila melanura,1,Henderson Bird Viewing Preserve,US-NV,20 Dec 2025,L209342,S289354766,,1
+104,22269,species,Verdin,Auriparus flaviceps,2,Henderson Bird Viewing Preserve,US-NV,20 Dec 2025,L209342,S289354766,,1
+105,17029,species,Vermilion Flycatcher,Pyrocephalus rubinus,1,Henderson Bird Viewing Preserve,US-NV,20 Dec 2025,L209342,S289354766,,1
+106,7468,species,White-faced Ibis,Plegadis chihi,1,Henderson Bird Viewing Preserve,US-NV,20 Dec 2025,L209342,S289354766,,1
+107,6891,species,Clark's Grebe,Aechmophorus clarkii,1,Henderson Bird Viewing Preserve,US-NV,20 Dec 2025,L209342,S289354766,,1
+108,4818,species,Costa's Hummingbird,Calypte costae,1,Henderson Bird Viewing Preserve,US-NV,20 Dec 2025,L209342,S289354766,,1
+109,3038,species,Greater Roadrunner,Geococcyx californianus,1,Henderson Bird Viewing Preserve,US-NV,20 Dec 2025,L209342,S289354766,,1
+110,778,species,Ruddy Duck,Oxyura jamaicensis,4,Henderson Bird Viewing Preserve,US-NV,20 Dec 2025,L209342,S289354766,,1
+111,501,species,Northern Shoveler,Spatula clypeata,80,Henderson Bird Viewing Preserve,US-NV,20 Dec 2025,L209342,S289354766,,1
+112,487,species,Cinnamon Teal,Spatula cyanoptera,8,Henderson Bird Viewing Preserve,US-NV,20 Dec 2025,L209342,S289354766,,1
+113,267,species,Snow Goose,Anser caerulescens,10,Henderson Bird Viewing Preserve,US-NV,20 Dec 2025,L209342,S289354766,,1
+114,33310,species,Lincoln's Sparrow,Melospiza lincolnii,3,Lower Hobble Creek WMA,US-UT,19 Dec 2025,L1144723,S289197025,,1
+115,5697,species,Sandhill Crane,Antigone canadensis,5,Lower Hobble Creek WMA,US-UT,19 Dec 2025,L1144723,S289197025,,1
+116,33095,species,American Tree Sparrow,Spizelloides arborea,4,Provo River Delta,US-UT,18 Dec 2025,L28266513,S289133236,,1
+117,26848,species,Golden-crowned Kinglet,Regulus satrapa,3,South Fork Canyon--South Fork Park,US-UT,18 Dec 2025,L2188208,S289081243,,1
+118,21274,species,Steller's Jay,Cyanocitta stelleri,8,South Fork Canyon--South Fork Park,US-UT,18 Dec 2025,L2188208,S289081243,,1
+119,9011,species,Northern Pygmy-Owl,Glaucidium gnoma,1,South Fork Canyon--South Fork Park,US-UT,18 Dec 2025,L2188208,S289081243,,1
+120,1274,species,Wild Turkey,Meleagris gallopavo,17,South Fork Canyon--South Fork Park,US-UT,18 Dec 2025,L2188208,S289081243,N,1
+121,32617,species,American Goldfinch,Spinus tristis,1,Provo City Cemetery,US-UT,17 Dec 2025,L230565,S288964465,,1
+122,27026,species,Brown Creeper,Certhia americana,3,Provo City Cemetery,US-UT,17 Dec 2025,L230565,S288964465,,1
+123,6539,species,American Herring Gull,Larus smithsonianus,5,River Lane,US-UT,16 Dec 2025,L268126,S288853651,,1
+124,5780,species,American Avocet,Recurvirostra americana,1,River Lane,US-UT,16 Dec 2025,L268126,S288853651,,1
+125,762,species,Common Merganser,Mergus merganser,1,River Lane,US-UT,16 Dec 2025,L268126,S288853651,,1
+126,21476,species,Black-billed Magpie,Pica hudsonia,1,Timpanogos Golf Club,US-UT,15 Dec 2025,L280992,S288717866,,1
+127,754,species,Hooded Merganser,Lophodytes cucullatus,2,Salt Lake International Center,US-UT,14 Dec 2025,L349904,S288632677,,1
+128,743,species,Common Goldeneye,Bucephala clangula,1,Salt Lake International Center,US-UT,14 Dec 2025,L349904,S288632677,,1
+129,666,species,Canvasback,Aythya valisineria,4,Salt Lake International Center,US-UT,14 Dec 2025,L349904,S288632677,,1
+130,8367,species,Bald Eagle,Haliaeetus leucocephalus,1,Farmington Bay WMA,US-UT,14 Dec 2025,L40499922,S288593644,,1
+131,505,species,Gadwall,Mareca strepera,3,Farmington Bay WMA,US-UT,14 Dec 2025,L40499922,S288593644,,1
+132,31883,species,American Pipit,Anthus rubescens,1,Antelope Island SP--Garr Ranch,US-UT,14 Dec 2025,L212071,S288568140,,1
+133,1765,species,Chukar,Alectoris chukar,10,Antelope Island SP--Buffalo Point,US-UT,14 Dec 2025,L5518420,S288568403,N,1
+134,34206,species,Townsend's Warbler,Setophaga townsendi,1,Batiquitos Lagoon--north side trails,US-CA,10 Dec 2025,L167991,S288084767,,1
+135,4158,species,White-throated Swift,Aeronautes saxatalis,10,Batiquitos Lagoon--north side trails,US-CA,10 Dec 2025,L167991,S288084767,,1
+136,485,species,Blue-winged Teal,Spatula discors,3,Batiquitos Lagoon--north side trails,US-CA,10 Dec 2025,L167991,S288084767,,1
+137,21624,species,Common Raven,Corvus corax,2,Ramona Grasslands Preserve--Wildflower Loop,US-CA,10 Dec 2025,L1344876,S288044117,,1
+138,11410,species,Nuttall's Woodpecker,Dryobates nuttallii,1,Ramona Grasslands Preserve--Wildflower Loop,US-CA,10 Dec 2025,L1344876,S288044117,,1
+139,25619,species,Swinhoe's White-eye,Zosterops simplex,5,Point La Jolla--seawatch,US-CA,09 Dec 2025,L233548,S287928945,P,1
+140,7389,species,Brandt's Cormorant,Urile penicillatus,20,Point La Jolla--seawatch,US-CA,09 Dec 2025,L233548,S287928945,,1
+141,6528,species,Western Gull,Larus occidentalis,3,Point La Jolla--seawatch,US-CA,09 Dec 2025,L233548,S287928945,,1
+142,6512,species,Heermann's Gull,Larus heermanni,20,Point La Jolla--seawatch,US-CA,09 Dec 2025,L233548,S287928945,,1
+143,6164,species,Black Turnstone,Arenaria melanocephala,9,Point La Jolla--seawatch,US-CA,09 Dec 2025,L233548,S287928945,,1
+144,6021,species,Long-billed Curlew,Numenius americanus,1,Point La Jolla--seawatch,US-CA,09 Dec 2025,L233548,S287928945,,1
+145,5806,species,Black Oystercatcher,Haematopus bachmani,2,Point La Jolla--seawatch,US-CA,09 Dec 2025,L233548,S287928945,,1
+146,29888,species,Cedar Waxwing,Bombycilla cedrorum,3,Tijuana River Valley--Bird & Butterfly Garden (Myers Ranch),US-CA,08 Dec 2025,L418752,S287825355,,1
+147,33973,species,Orange-crowned Warbler,Leiothlypis celata,2,Tijuana Slough NWR--Visitor Center/North McCoy Trail,US-CA,08 Dec 2025,L3239468,S287814752,,1
+148,28333,species,Hermit Thrush,Catharus guttatus,2,Tijuana Slough NWR--Visitor Center/North McCoy Trail,US-CA,08 Dec 2025,L3239468,S287814752,,1
+149,27329,species,Marsh Wren,Cistothorus palustris,5,Tijuana Slough NWR--Visitor Center/North McCoy Trail,US-CA,08 Dec 2025,L3239468,S287814752,,1
+150,27191,species,Northern House Wren,Troglodytes aedon,1,Tijuana Slough NWR--Visitor Center/North McCoy Trail,US-CA,08 Dec 2025,L3239468,S287814752,,1
+151,17010,species,Say's Phoebe,Sayornis saya,1,Tijuana Slough NWR--Visitor Center/North McCoy Trail,US-CA,08 Dec 2025,L3239468,S287814752,,1
+152,6231,species,Western Sandpiper,Calidris mauri,1,Tijuana Slough NWR--Visitor Center/North McCoy Trail,US-CA,08 Dec 2025,L3239468,S287814752,,1
+153,6154,species,Greater Yellowlegs,Tringa melanoleuca,2,Tijuana Slough NWR--Visitor Center/North McCoy Trail,US-CA,08 Dec 2025,L3239468,S287814752,,1
+154,6061,species,Long-billed Dowitcher,Limnodromus scolopaceus,10,Tijuana Slough NWR--Visitor Center/North McCoy Trail,US-CA,08 Dec 2025,L3239468,S287814752,,1
+155,612,species,Green-winged Teal,Anas crecca,3,Tijuana Slough NWR--Visitor Center/North McCoy Trail,US-CA,08 Dec 2025,L3239468,S287814752,,1
+156,594,species,Northern Pintail,Anas acuta,1,Tijuana Slough NWR--Visitor Center/North McCoy Trail,US-CA,08 Dec 2025,L3239468,S287814752,,1
+157,28136,species,Western Bluebird,Sialia mexicana,1,Felicita County Park,US-CA,07 Dec 2025,L452002,S287674729,,1
+158,28114,species,Northern Mockingbird,Mimus polyglottos,1,Felicita County Park,US-CA,07 Dec 2025,L452002,S287674729,,1
+159,26889,species,White-breasted Nuthatch,Sitta carolinensis,1,Felicita County Park,US-CA,07 Dec 2025,L452002,S287674729,,1
+160,34028,species,Common Yellowthroat,Geothlypis trichas,2,San Elijo Lagoon--west,US-CA,06 Dec 2025,L761141,S287528809,,1
+161,33244,species,Savannah Sparrow,Passerculus sandwichensis,3,San Elijo Lagoon--west,US-CA,06 Dec 2025,L761141,S287528809,,1
+162,12062,species,Merlin,Falco columbarius,1,San Elijo Lagoon--west,US-CA,06 Dec 2025,L761141,S287528809,,1
+163,6855,species,Pied-billed Grebe,Podilymbus podiceps,2,San Elijo Lagoon--west,US-CA,06 Dec 2025,L761141,S287528809,,1
+164,6226,species,Least Sandpiper,Calidris minutilla,2,San Elijo Lagoon--west,US-CA,06 Dec 2025,L761141,S287528809,,1
+165,4831,species,Allen's Hummingbird,Selasphorus sasin,1,San Elijo Lagoon--west,US-CA,06 Dec 2025,L761141,S287528809,,1
+166,742,species,Bufflehead,Bucephala albeola,5,San Elijo Lagoon--west,US-CA,06 Dec 2025,L761141,S287528809,,1
+167,34159,species,Yellow-rumped Warbler,Setophaga coronata,1,Kit Carson Park,US-CA,05 Dec 2025,L281194,S287424753,,1
+168,21303,species,California Scrub-Jay,Aphelocoma californica,2,Kit Carson Park,US-CA,05 Dec 2025,L281194,S287424753,,1
+169,8256,species,Sharp-shinned Hawk,Accipiter striatus,1,Kit Carson Park,US-CA,05 Dec 2025,L281194,S287424753,,1
+170,7815,species,Turkey Vulture,Cathartes aura,1,Kit Carson Park,US-CA,05 Dec 2025,L281194,S287424753,,1
+171,7600,species,Black-crowned Night Heron,Nycticorax nycticorax,3,Kit Carson Park,US-CA,05 Dec 2025,L281194,S287424753,,1
+172,5468,species,Common Gallinule,Gallinula galeata,1,Kit Carson Park,US-CA,05 Dec 2025,L281194,S287424753,,1
+173,4814,species,Anna's Hummingbird,Calypte anna,5,Kit Carson Park,US-CA,05 Dec 2025,L281194,S287424753,,1
+174,17461,species,Cassin's Kingbird,Tyrannus vociferans,1,San Diego River mudflats (including Robb Field & Quivira Way),US-CA,04 Dec 2025,L506275,S287386538,,1
+175,7634,species,Reddish Egret,Egretta rufescens,1,San Diego River mudflats (including Robb Field & Quivira Way),US-CA,04 Dec 2025,L506275,S287386538,,1
+176,6933,species,Common Loon,Gavia immer,1,San Diego River mudflats (including Robb Field & Quivira Way),US-CA,04 Dec 2025,L506275,S287386538,,1
+177,6876,species,Eared Grebe,Podiceps nigricollis,2,San Diego River mudflats (including Robb Field & Quivira Way),US-CA,04 Dec 2025,L506275,S287386538,,1
+178,5256,species,Ridgway's Rail,Rallus obsoletus,1,San Diego River mudflats (including Robb Field & Quivira Way),US-CA,04 Dec 2025,L506275,S287386538,,1
+179,517,species,American Wigeon,Mareca americana,10,San Diego River mudflats (including Robb Field & Quivira Way),US-CA,04 Dec 2025,L506275,S287386538,,1
+180,11400,species,Downy Woodpecker,Dryobates pubescens,1,Geneva Settling ponds,US-UT,02 Dec 2025,L504724,S287116302,,1
+181,5827,species,Killdeer,Charadrius vociferus,2,Geneva Settling ponds,US-UT,02 Dec 2025,L504724,S287116302,,1
+182,5297,species,Virginia Rail,Rallus limicola,1,Geneva Settling ponds,US-UT,02 Dec 2025,L504724,S287116302,,1
+183,8910,species,Great Horned Owl,Bubo virginianus,1,River Lane,US-UT,02 Dec 2025,L268126,S287058292,,1
+184,6521,species,Ring-billed Gull,Larus delawarensis,5,River Lane,US-UT,02 Dec 2025,L268126,S287058292,,1
+185,33565,species,Western Meadowlark,Sturnella neglecta,5,Farmington Bay WMA,US-UT,01 Dec 2025,L165048,S286991933,,1
+186,9276,species,Short-eared Owl,Asio flammeus,2,Farmington Bay WMA,US-UT,01 Dec 2025,L165048,S286991933,,1
+187,8324,species,Northern Harrier,Circus hudsonius,1,Farmington Bay WMA,US-UT,01 Dec 2025,L165048,S286991933,,1
+188,33277,species,Song Sparrow,Melospiza melodia,5,Community Park and River Trail,US-UT,01 Dec 2025,L3298871,S286965637,,1
+189,33124,species,Dark-eyed Junco,Junco hyemalis,20,Community Park and River Trail,US-UT,01 Dec 2025,L3298871,S286965637,,1
+190,32609,species,Lesser Goldfinch,Spinus psaltria,8,Community Park and River Trail,US-UT,01 Dec 2025,L3298871,S286965637,,1
+191,27813,species,European Starling,Sturnus vulgaris,5,Community Park and River Trail,US-UT,01 Dec 2025,L3298871,S286965637,N,1
+192,26844,species,Ruby-crowned Kinglet,Corthylio calendula,2,Community Park and River Trail,US-UT,01 Dec 2025,L3298871,S286965637,,1
+193,22065,species,Black-capped Chickadee,Poecile atricapillus,3,Community Park and River Trail,US-UT,01 Dec 2025,L3298871,S286965637,,1
+194,11900,species,Northern Flicker,Colaptes auratus,5,Community Park and River Trail,US-UT,01 Dec 2025,L3298871,S286965637,,1
+195,2412,species,Mourning Dove,Zenaida macroura,2,Community Park and River Trail,US-UT,01 Dec 2025,L3298871,S286965637,,1
+196,33187,species,White-crowned Sparrow,Zonotrichia leucophrys,8,Utah Lake SP,US-UT,30 Nov 2025,L283255,S286966825,,1
+197,6888,species,Western Grebe,Aechmophorus occidentalis,1,Utah Lake SP,US-UT,30 Nov 2025,L283255,S286966825,,1
+198,545,species,Mallard,Anas platyrhynchos,5,Utah Lake SP,US-UT,30 Nov 2025,L283255,S286966825,,1
+199,342,species,Canada Goose,Branta canadensis,5,Utah Lake SP,US-UT,30 Nov 2025,L283255,S286966825,,1
+200,33386,species,Spotted Towhee,Pipilo maculatus,2,Utah Lake SP,US-UT,30 Nov 2025,L283255,S286812431,,1
+201,31534,species,House Sparrow,Passer domesticus,30,Utah Lake SP,US-UT,30 Nov 2025,L283255,S286812431,N,1
+202,28633,species,American Robin,Turdus migratorius,3,Utah Lake SP,US-UT,30 Nov 2025,L283255,S286812431,,1
+203,10306,species,Belted Kingfisher,Megaceryle alcyon,1,Utah Lake SP,US-UT,30 Nov 2025,L283255,S286812431,,1
+204,8278,species,Cooper's Hawk,Astur cooperii,1,Utah Lake SP,US-UT,30 Nov 2025,L283255,S286812431,,1
+205,1094,species,California Quail,Callipepla californica,1,Utah Lake SP,US-UT,30 Nov 2025,L283255,S286812431,N,1
+206,7832,species,Osprey,Pandion haliaetus,1,Bolsa Chica,US-CA,29 Nov 2025,L55595784,S286963506,,1
+207,6591,species,California Gull,Larus californicus,50,Bolsa Chica,US-CA,29 Nov 2025,L55595784,S286963506,,1
+208,6051,species,Marbled Godwit,Limosa fedoa,20,Bolsa Chica,US-CA,29 Nov 2025,L55595784,S286963506,,1
+209,5811,species,Black-bellied Plover,Pluvialis squatarola,5,Bolsa Chica,US-CA,29 Nov 2025,L55595784,S286963506,,1
+210,770,species,Red-breasted Merganser,Mergus serrator,4,Bolsa Chica,US-CA,29 Nov 2025,L55595784,S286963506,,1
+211,314,species,Brant,Branta bernicla,5,Bolsa Chica,US-CA,29 Nov 2025,L55595784,S286963506,,1
+212,33350,species,California Towhee,Melozone crissalis,5,Hahamongna Watershed Park (formerly Oak Grove Park),US-CA,28 Nov 2025,L198791,S286964450,,1
+213,32310,species,House Finch,Haemorhous mexicanus,5,Hahamongna Watershed Park (formerly Oak Grove Park),US-CA,28 Nov 2025,L198791,S286964450,,1
+214,25431,species,Wrentit,Chamaea fasciata,2,Hahamongna Watershed Park (formerly Oak Grove Park),US-CA,28 Nov 2025,L198791,S286964450,,1
+215,25253,species,Bushtit,Psaltriparus minimus,10,Hahamongna Watershed Park (formerly Oak Grove Park),US-CA,28 Nov 2025,L198791,S286964450,,1
+216,22150,species,Oak Titmouse,Baeolophus inornatus,5,Hahamongna Watershed Park (formerly Oak Grove Park),US-CA,28 Nov 2025,L198791,S286964450,,1
+217,21557,species,American Crow,Corvus brachyrhynchos,3,Hahamongna Watershed Park (formerly Oak Grove Park),US-CA,28 Nov 2025,L198791,S286964450,,1
+218,16998,species,Black Phoebe,Sayornis nigricans,10,Hahamongna Watershed Park (formerly Oak Grove Park),US-CA,28 Nov 2025,L198791,S286964450,,1
+219,11146,species,Acorn Woodpecker,Melanerpes formicivorus,5,Hahamongna Watershed Park (formerly Oak Grove Park),US-CA,28 Nov 2025,L198791,S286964450,,1
+220,8487,species,Red-shouldered Hawk,Buteo lineatus,2,Hahamongna Watershed Park (formerly Oak Grove Park),US-CA,28 Nov 2025,L198791,S286964450,,1
+221,33779,species,Red-winged Blackbird,Agelaius phoeniceus,3,Farmington Bay WMA,US-UT,22 Nov 2025,L40499922,S285817815,,1
+222,12028,species,American Kestrel,Falco sparverius,1,Farmington Bay WMA,US-UT,22 Nov 2025,L40499922,S285817815,,1
+223,8506,species,Red-tailed Hawk,Buteo jamaicensis,3,Farmington Bay WMA,US-UT,22 Nov 2025,L40499922,S285817815,,1
+224,1477,species,Ring-necked Pheasant,Phasianus colchicus,1,Farmington Bay WMA,US-UT,22 Nov 2025,L40499922,S285817815,N,1
+225,33864,species,Great-tailed Grackle,Quiscalus mexicanus,10,Isla Mujeres,MX-ROO,16 Nov 2025,L55113142,S284782028,,1
+226,35806,species,Cinnamon-bellied Saltator,Saltator grandis,2,Jardín Botánico Regional Roger Orellana,MX-YUC,13 Nov 2025,L3626918,S286971299,,1
+227,34057,species,Hooded Warbler,Setophaga citrina,1,Jardín Botánico Regional Roger Orellana,MX-YUC,13 Nov 2025,L3626918,S286971299,,1
+228,28767,species,Clay-colored Thrush,Turdus grayi,1,Jardín Botánico Regional Roger Orellana,MX-YUC,13 Nov 2025,L3626918,S286971299,,1
+229,17379,species,Boat-billed Flycatcher,Megarynchus pitangua,1,Jardín Botánico Regional Roger Orellana,MX-YUC,13 Nov 2025,L3626918,S286971299,,1
+230,13092,species,Olive-throated Parakeet,Eupsittula nana,2,Jardín Botánico Regional Roger Orellana,MX-YUC,13 Nov 2025,L3626918,S286971299,,1
+231,1853,species,Rock Pigeon,Columba livia,2,Jardín Botánico Regional Roger Orellana,MX-YUC,13 Nov 2025,L3626918,S286971299,N,1
+232,24070,species,Mangrove Swallow,Tachycineta albilinea,10,Playa Sisal,MX-YUC,12 Nov 2025,L4907072,S287010384,,1
+233,7424,species,Double-crested Cormorant,Nannopterum auritum,10,Playa Sisal,MX-YUC,12 Nov 2025,L4907072,S287010384,,1
+234,6789,species,Royal Tern,Thalasseus maximus,3,Playa Sisal,MX-YUC,12 Nov 2025,L4907072,S287010384,,1
+235,6490,species,Laughing Gull,Leucophaeus atricilla,10,Playa Sisal,MX-YUC,12 Nov 2025,L4907072,S287010384,,1
+236,6161,species,Ruddy Turnstone,Arenaria interpres,5,Playa Sisal,MX-YUC,12 Nov 2025,L4907072,S287010384,,1
+237,6147,species,Willet,Tringa semipalmata,2,Playa Sisal,MX-YUC,12 Nov 2025,L4907072,S287010384,,1
+238,5928,species,Wilson's Plover,Anarhynchus wilsonia,3,Playa Sisal,MX-YUC,12 Nov 2025,L4907072,S287010384,,1
+239,5500,species,American Coot,Fulica americana,2,Playa Sisal,MX-YUC,12 Nov 2025,L4907072,S287010384,,1
+240,34432,species,Summer Tanager,Piranga rubra,,Anthropological Museum,MX-YUC,11 Nov 2025,L55024065,S284019112,,1
+241,34171,species,Yellow-throated Warbler,Setophaga dominica,,La Plancha,MX-YUC,11 Nov 2025,L54931470,S283992263,,1
+242,17459,species,Couch's Kingbird,Tyrannus couchii,,La Plancha,MX-YUC,11 Nov 2025,L54931470,S283992308,,1
+243,2031,species,Eurasian Collared-Dove,Streptopelia decaocto,,La Plancha,MX-YUC,11 Nov 2025,L54931470,S283992399,N,1
+244,5100,species,Cinnamon Hummingbird,Amazilia rutila,,La Plancha,MX-YUC,11 Nov 2025,L54931470,S283992566,,1
+245,33953,species,Northern Waterthrush,Parkesia noveboracensis,4,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+246,10313,species,American Pygmy Kingfisher,Chloroceryle aenea,1,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+247,10301,species,Ringed Kingfisher,Megaceryle torquata,1,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+248,7792,species,Brown Pelican,Pelecanus occidentalis,10,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+249,7753,species,Great Blue Heron,Ardea herodias,3,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+250,7729,species,Great Egret,Ardea alba,3,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+251,7704,species,Green Heron,Butorides virescens,2,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+252,7645,species,Snowy Egret,Egretta thula,2,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+253,7630,species,Tricolored Heron,Egretta tricolor,2,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+254,7629,species,Little Blue Heron,Egretta caerulea,2,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+255,7540,species,Bare-throated Tiger-Heron,Tigrisoma mexicanum,2,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+256,7533,species,Roseate Spoonbill,Platalea ajaja,2,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+257,7462,species,White Ibis,Eudocimus albus,2,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+258,7315,species,Magnificent Frigatebird,Fregata magnificens,5,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+259,7306,species,Wood Stork,Mycteria americana,2,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+260,6807,species,American Flamingo,Phoenicopterus ruber,20,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+261,6775,species,Sandwich Tern,Thalasseus sandvicensis,6,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+262,6126,species,Spotted Sandpiper,Actitis macularius,1,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+263,5770,species,Black-necked Stilt,Himantopus mexicanus,5,Reserva de la Biosfera Ría Celestún--Ría Celestún,MX-YUC,10 Nov 2025,L2587595,S285862454,,1
+264,34933,species,Blue-gray Tanager,Thraupis episcopus,,Choco Story,MX-YUC,09 Nov 2025,L54971439,S283775280,,1
+265,33755,species,Altamira Oriole,Icterus gularis,,Choco Story,MX-YUC,09 Nov 2025,L54971439,S283770846,,1
+266,21251,species,Yucatan Jay,Cyanocorax yucatanicus,,Choco Story,MX-YUC,09 Nov 2025,L54971439,S283769504,,1
+267,2389,species,White-winged Dove,Zenaida asiatica,,Choco Story,MX-YUC,09 Nov 2025,L54971439,S283769460,,1
+268,33851,species,Brewer's Blackbird,Euphagus cyanocephalus,,Choco Story,MX-YUC,09 Nov 2025,L54971439,S283767446,,1
+269,34079,species,Magnolia Warbler,Setophaga magnolia,,Kabah,MX-YUC,09 Nov 2025,L54971584,S283768197,,1
+270,19165,species,White-eyed Vireo,Vireo griseus,,Kabah,MX-YUC,09 Nov 2025,L54971584,S283768478,,1
+271,16475,species,Yellow-olive Flatbill,Tolmomyias sulphurescens,,Kabah,MX-YUC,09 Nov 2025,L54971584,S283768415,,1
+272,8430,species,Roadside Hawk,Rupornis magnirostris,,Kabah,MX-YUC,09 Nov 2025,L54971584,S283768326,,1
+273,21233,species,Green Jay,Cyanocorax yncas,,Kabah,MX-YUC,09 Nov 2025,L54971584,S283768531,,1
+274,17368,species,Great Kiskadee,Pitangus sulphuratus,,Kabah,MX-YUC,09 Nov 2025,L54971584,S283768574,,1
+275,16963,species,Least Flycatcher,Empidonax minimus,,Uxmal,MX-YUC,09 Nov 2025,L54965385,S283742046,,1
+276,27123,species,Blue-gray Gnatcatcher,Polioptila caerulea,,Uxmal,MX-YUC,09 Nov 2025,L54965385,S283741814,,1
+277,9901,species,Turquoise-browed Motmot,Eumomota superciliosa,1,Uxmal,MX-YUC,09 Nov 2025,L54965385,S283742776,,1
+278,9857,species,Lesson's Motmot,Momotus lessonii,,Uxmal,MX-YUC,09 Nov 2025,L54965385,S283742271,,1
+279,2243,species,Common Ground Dove,Columbina passerina,,Uxmal,MX-YUC,09 Nov 2025,L54965385,S283743084,,1
+280,28101,species,Tropical Mockingbird,Mimus gilvus,,La Plancha,MX-YUC,08 Nov 2025,L54932215,S283589038,,1
+281,12909,species,Red-lored Amazon,Amazona autumnalis,,La Plancha,MX-YUC,08 Nov 2025,L54932182,S283588869,,1
+282,24289,species,Cave Swallow,Petrochelidon fulva,,La Plancha,MX-YUC,08 Nov 2025,L54931470,S283586011,,1
+283,17392,species,Social Flycatcher,Myiozetetes similis,,La Plancha,MX-YUC,08 Nov 2025,L54931470,S283585900,,1
+284,445,species,Muscovy Duck,Cairina moschata,,La Plancha,MX-YUC,08 Nov 2025,L54931470,S283585818,,1
+285,17452,species,Tropical Kingbird,Tyrannus melancholicus,,Merida,MX-YUC,08 Nov 2025,L54929292,S283576358,,1
+286,7811,species,Black Vulture,Coragyps atratus,,Chichén Itzá,MX-YUC,07 Nov 2025,L54872586,S283305679,,1
+287,33843,species,Melodious Blackbird,Dives dives,,Valladolid,MX-YUC,07 Nov 2025,L54865871,S283268313,,1
+288,1320,species,Sooty Grouse,Dendragapus fuliginosus,,Lassen,US-CA,13 Sep 2025,L55048236,S284132761,,1
+289,21181,species,Canada Jay,Perisoreus canadensis,,Mount Rainier,US-WA,02 Aug 2025,L50917333,S264610218,,1
+290,31857,species,Tree Pipit,Anthus trivialis,,Chamonix,FR-ARA,20 Jun 2025,L48039582,S252260112,,1
+291,29617,species,Black Redstart,Phoenicurus ochruros,,Chamonix,FR-ARA,19 Jun 2025,L47962658,S251922344,,1
+292,22114,species,Eurasian Blue Tit,Cyanistes caeruleus,,Chamonix,FR-ARA,19 Jun 2025,L47956809,S251892776,,1
+293,21508,species,Yellow-billed Chough,Pyrrhocorax graculus,,Chamonix,FR-ARA,19 Jun 2025,L47962367,S251921053,,1
+294,29253,species,European Robin,Erithacus rubecula,,Trient Glacier,CH-VS,18 Jun 2025,L47924152,S251745415,,1
+295,26875,species,Common Firecrest,Regulus ignicapilla,,Trient Glacier,CH-VS,18 Jun 2025,L47924152,S251745335,,1
+296,24853,species,Common Chiffchaff,Phylloscopus collybita,,Trient Glacier,CH-VS,18 Jun 2025,L47923953,S251744857,,1
+297,21950,species,Coal Tit,Periparus ater,,Trient Glacier,CH-VS,18 Jun 2025,L47923953,S251744591,,1
+298,32552,species,European Goldfinch,Carduelis carduelis,,Trient Glacier,CH-VS,18 Jun 2025,L47923351,S251742202,,1
+299,31948,species,Common Chaffinch,Fringilla coelebs,,Trient Glacier,CH-VS,18 Jun 2025,L47923351,S251742139,,1
+300,28500,species,Eurasian Blackbird,Turdus merula,,Andermatt,CH-UR,18 Jun 2025,L47905123,S251654060,,1
+301,25267,species,Eurasian Blackcap,Sylvia atricapilla,,Lugano,CH-TI,18 Jun 2025,L47894985,S251597376,,1
+302,4094,species,Common Swift,Apus apus,,Lugano,CH-TI,18 Jun 2025,L47894025,S251593108,,1
+303,24214,species,Western House-Martin,Delichon urbicum,,Lake Como,IT-25,17 Jun 2025,L47856786,S251425068,,1
+304,377,species,Mute Swan,Cygnus olor,,Lake Como,IT-25,17 Jun 2025,L47854626,S251416483,N,1
+305,7397,species,Great Cormorant,Phalacrocorax carbo,,Lake Como,IT-25,17 Jun 2025,L47845065,S251375321,,1
+306,5487,species,Eurasian Coot,Fulica atra,,Lake Como,IT-25,17 Jun 2025,L47854626,S251417568,,1
+307,4077,species,Alpine Swift,Tachymarptis melba,,Lake Como,IT-25,17 Jun 2025,L47845571,S251377687,,1
+309,24187,species,Barn Swallow,Hirundo rustica,,Tahoe,US-CA,14 May 2025,L45010170,S237995609,,1
+310,16912,species,Western Wood-Pewee,Contopus sordidulus,,Tahoe,US-CA,14 May 2025,L45010170,S237992917,,1
+311,28144,species,Mountain Bluebird,Sialia currucoides,,Tahoe,US-CA,14 May 2025,L44484039,S287860310,,1
+312,33099,species,Fox Sparrow,Passerella iliaca,,Tahoe Forest,US-CA,09 May 2025,L44495427,S235179971,,1
+313,26924,species,Pygmy Nuthatch,Sitta pygmaea,,Tahoe Forest,US-CA,09 May 2025,L44495427,S235180051,,1
+314,22077,species,Mountain Chickadee,Poecile gambeli,,Tahoe,US-CA,09 May 2025,L44484039,S235128611,,1
+315,6731,species,Forster's Tern,Sterna forsteri,,Tahoe,US-CA,09 May 2025,L44484039,S235120952,,1
+316,7745,species,Gray Heron,Ardea cinerea,,Kyoto,JP-26,08 May 2025,L55048150,S284132335,,1
+36,21215,species,Black-throated Magpie-Jay,Cyanocorax colliei,5,Tijuana River Valley--Community Gardens,US-CA,04 Feb 2026,L469003,S298117043,X,0
+48,457,species,Mandarin Duck,Aix galericulata,2,Santee Lakes,US-CA,29 Jan 2026,L192625,S296889788,X,0
+308,1573,species,Indian Peafowl,Pavo cristatus,,Provo,US-UT,18 May 2025,L45421939,S240028632,X,0
+1,11134,hybrid,Red-naped x Red-breasted Sapsucker (hybrid),Sphyrapicus nuchalis x ruber,1,Provo City Cemetery,US-UT,09 Mar 2026,L230565,S307665688,,0
+2,6618,spuh,Larus sp.,Larus sp.,3,Jordan River-3 Creeks Confluence,US-UT,05 Mar 2026,L6191919,S306320889,,0
+4,6619,spuh,gull sp.,Larinae sp.,300,Antelope Island SP--Causeway,US-UT,03 Mar 2026,L151122,S305727020,,0
+5,792,spuh,duck sp.,Anatidae (duck sp.),400,Antelope Island SP--Causeway,US-UT,03 Mar 2026,L151122,S305727020,,0
+94,312,domestic,Domestic goose sp. (Domestic type),Anser sp. (Domestic type),1,Frank G. Bonelli RP--South and East Access,US-CA,28 Dec 2025,L4025297,S290800184,X,0

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bird Chaser</title>
+
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+<h2>Bird Chaser</h2>
+
+<div id="apikeyScreen">
+
+<h3>Enter eBird API Key</h3>
+
+<input id="apikeyInput" placeholder="Paste API key">
+
+<br><br>
+
+<button onclick="saveKey()">Start App</button>
+
+<p>Get a key: https://ebird.org/api/keygen</p>
+
+</div>
+
+<div id="app" style="display:none">
+
+<div class="controls">
+
+<input type="file" id="lifeFile" accept=".csv">
+
+<button onclick="importLifeList()">Import Life List</button>
+
+<button onclick="clearLifeList()">Clear Cached Life List</button>
+
+<button onclick="changeKey()">Change API Key</button>
+
+</div>
+
+<div id="map"></div>
+
+<div class="controls">
+
+Radius:
+
+<select id="radius">
+<option value="10">10 km</option>
+<option value="20" selected>20 km</option>
+<option value="50">50 km</option>
+</select>
+
+<button onclick="findBirds()">Find Lifers</button>
+
+</div>
+
+<ul id="results"></ul>
+
+</div>
+
+<script src="app.js"></script>
+
+<script>
+if("serviceWorker" in navigator){
+navigator.serviceWorker.register("sw.js")
+}
+</script>
+
+</body>
+</html>
