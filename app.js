@@ -82,13 +82,30 @@ function clearMapPoints() {
   startPoint = null;
   routeStart = null;
   routeEnd = null;
+  routeClickStage = "start";
 
-  if (pointMarker) map.removeLayer(pointMarker);
-  if (startMarker) map.removeLayer(startMarker);
-  if (endMarker) map.removeLayer(endMarker);
-  if (routeLine) map.removeLayer(routeLine);
+  currentBirds = [];
+  speciesLocationCache.clear();
 
-  pointMarker = startMarker = endMarker = routeLine = null;
+  if (pointMarker) {
+    map.removeLayer(pointMarker);
+    pointMarker = null;
+  }
+
+  if (startMarker) {
+    map.removeLayer(startMarker);
+    startMarker = null;
+  }
+
+  if (endMarker) {
+    map.removeLayer(endMarker);
+    endMarker = null;
+  }
+
+  if (routeLine) {
+    map.removeLayer(routeLine);
+    routeLine = null;
+  }
 }
 
 function setSinglePoint(latlng) {
@@ -99,14 +116,47 @@ function setSinglePoint(latlng) {
 }
 
 function setRoutePoint(latlng) {
-  if (!routeStart) {
+  // First click: set start
+  if (!routeStart || (routeStart && routeEnd)) {
+    // If a full old route already exists, clear it first
+    if (startMarker) {
+      map.removeLayer(startMarker);
+      startMarker = null;
+    }
+
+    if (endMarker) {
+      map.removeLayer(endMarker);
+      endMarker = null;
+    }
+
+    if (routeLine) {
+      map.removeLayer(routeLine);
+      routeLine = null;
+    }
+
     routeStart = latlng;
+    routeEnd = null;
+    routeClickStage = "end";
+
     startMarker = L.marker(latlng).addTo(map);
     return;
   }
 
+  // Second click: set end
   routeEnd = latlng;
+  routeClickStage = "start";
+
+  if (endMarker) {
+    map.removeLayer(endMarker);
+    endMarker = null;
+  }
+
   endMarker = L.marker(latlng).addTo(map);
+
+  if (routeLine) {
+    map.removeLayer(routeLine);
+    routeLine = null;
+  }
 
   routeLine = L.polyline(
     [
@@ -381,3 +431,4 @@ async function toggleMoreLocations(speciesCode) {
     `obs-${speciesCode}`
   ).innerHTML = top.map(renderObservationBlock).join("");
 }
+
