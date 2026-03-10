@@ -120,6 +120,50 @@ li .meta {
   display: block;
 }
 
+.bird-result {
+  background: #ffffff;
+  border: 1px solid #e1e8e1;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  line-height: 1.45;
+}
+
+.bird-name {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.sci-name {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.bird-location {
+  margin-bottom: 4px;
+}
+
+.bird-links-row {
+  margin-bottom: 2px;
+}
+
+.bird-count {
+  color: #536053;
+}
+
+.bird-links-row a {
+  color: #1b5e20;
+  text-decoration: none;
+}
+
+.bird-links-row a:hover {
+  text-decoration: underline;
+}
+
+.disabled-link {
+  color: #7a857a;
+}
+
 .locations-list {
   margin-top: 10px;
   display: grid;
