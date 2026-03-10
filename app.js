@@ -10,6 +10,12 @@ let marker = null;
 let startPoint = null;
 let lifeSpecies = new Set();
 
+// Cached from initial search
+let currentBirds = [];
+
+// Cache for expanded species-specific location lookups
+const speciesLocationCache = new Map();
+
 init();
 
 function init() {
@@ -84,12 +90,9 @@ function handleLifeListImport(event) {
     const text = String(reader.result || "");
 
     try {
-      const parsedSpecies = parseLifeListCsv(text);
-      lifeSpecies = parsedSpecies;
-
+      lifeSpecies = parseLifeListCsv(text);
       localStorage.setItem(STORAGE_KEYS.lifeListCsv, text);
       localStorage.setItem(STORAGE_KEYS.lifeListImportedAt, new Date().toISOString());
-
       updateLifeListStatus();
       alert(`Imported ${lifeSpecies.size} species from your eBird CSV.`);
     } catch (error) {
@@ -131,12 +134,10 @@ function clearLifeListCache() {
   lifeSpecies = new Set();
   updateLifeListStatus();
 
-  const results = document.getElementById("results");
+  const list = document.getElementById("results");
   const summary = document.getElementById("resultsSummary");
-  if (results) results.innerHTML = "";
+  if (list) list.innerHTML = "";
   if (summary) summary.textContent = "";
-
-  alert("Cached life list cleared.");
 }
 
 function updateLifeListStatus() {
@@ -183,10 +184,7 @@ function parseLifeListCsv(text) {
 
   for (let i = 1; i < rows.length; i += 1) {
     const row = rows[i];
-
-    if (!row.length) {
-      continue;
-    }
+    if (!row.length) continue;
 
     const category = (row[categoryIndex] || "").trim().toLowerCase();
     const scientificName = (row[scientificNameIndex] || "").trim();
@@ -263,18 +261,29 @@ function haversine(lat1, lon1, lat2, lon2) {
 }
 
 function parseObsDate(obsDt) {
-  if (!obsDt) {
-    return 0;
-  }
+  if (!obsDt) return 0;
 
   const normalized = obsDt.includes("T") ? obsDt : obsDt.replace(" ", "T");
   const timestamp = Date.parse(normalized);
 
-  if (!Number.isNaN(timestamp)) {
-    return timestamp;
+  return Number.isNaN(timestamp) ? 0 : timestamp;
+}
+
+function formatObsDate(obsDt) {
+  const timestamp = parseObsDate(obsDt);
+
+  if (!timestamp) {
+    return obsDt || "Unknown date";
   }
 
-  return 0;
+  const date = new Date(timestamp);
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  const hours = String(date.getHours()).padStart(2, "0");
+  const minutes = String(date.getMinutes()).padStart(2, "0");
+
+  return `${year}-${month}-${day} ${hours}:${minutes}`;
 }
 
 function escapeHtml(value) {
@@ -290,24 +299,6 @@ function escapeHtml(value) {
   });
 }
 
-function formatObsDate(obsDt) {
-  const timestamp = parseObsDate(obsDt);
-
-  if (!timestamp) {
-    return obsDt || "Unknown date";
-  }
-
-  const date = new Date(timestamp);
-
-  const year = date.getFullYear();
-  const month = String(date.getMonth() + 1).padStart(2, "0");
-  const day = String(date.getDate()).padStart(2, "0");
-  const hours = String(date.getHours()).padStart(2, "0");
-  const minutes = String(date.getMinutes()).padStart(2, "0");
-
-  return `${year}-${month}-${day} ${hours}:${minutes}`;
-}
-
 function getLocationUrl(observation) {
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${observation.lat},${observation.lng}`)}`;
 }
@@ -320,81 +311,99 @@ function getChecklistUrl(observation) {
   return `https://ebird.org/checklist/${encodeURIComponent(observation.subId)}`;
 }
 
-function groupLiferObservations(observations) {
+function sortObservationsMostRecentFirst(a, b) {
+  const dateDiff = parseObsDate(b.obsDt) - parseObsDate(a.obsDt);
+  if (dateDiff !== 0) return dateDiff;
+
+  const aDistance = haversine(startPoint.lat, startPoint.lng, a.lat, a.lng);
+  const bDistance = haversine(startPoint.lat, startPoint.lng, b.lat, b.lng);
+  return aDistance - bDistance;
+}
+
+function dedupeObservations(observations) {
+  const deduped = new Map();
+
+  for (const obs of observations) {
+    const key = obs.subId
+      ? `sub:${obs.subId}`
+      : `pt:${obs.locId || ""}|${obs.locName || ""}|${obs.obsDt || ""}|${obs.lat}|${obs.lng}`;
+
+    const existing = deduped.get(key);
+
+    if (!existing || parseObsDate(obs.obsDt) > parseObsDate(existing.obsDt)) {
+      deduped.set(key, obs);
+    }
+  }
+
+  return Array.from(deduped.values());
+}
+
+function buildBirdListFromInitialResults(observations) {
   const birdMap = new Map();
 
-  for (const observation of observations) {
-    if (!observation || !observation.sciName || !observation.comName) {
+  for (const obs of observations) {
+    if (!obs || !obs.sciName || !obs.comName || !obs.speciesCode) {
       continue;
     }
 
-    if (lifeSpecies.has(observation.sciName)) {
+    if (lifeSpecies.has(obs.sciName)) {
       continue;
     }
 
-    if (!birdMap.has(observation.sciName)) {
-      birdMap.set(observation.sciName, {
-        sciName: observation.sciName,
-        comName: observation.comName,
-        locations: []
+    if (!birdMap.has(obs.sciName)) {
+      birdMap.set(obs.sciName, {
+        sciName: obs.sciName,
+        comName: obs.comName,
+        speciesCode: obs.speciesCode,
+        initialObservation: obs
       });
+      continue;
     }
 
-    const entry = birdMap.get(observation.sciName);
-    entry.locations.push(observation);
+    const existing = birdMap.get(obs.sciName);
+    if (parseObsDate(obs.obsDt) > parseObsDate(existing.initialObservation.obsDt)) {
+      existing.initialObservation = obs;
+    }
   }
 
-  const birds = [];
+  const birds = Array.from(birdMap.values()).sort((a, b) => {
+    const dateDiff = parseObsDate(b.initialObservation.obsDt) - parseObsDate(a.initialObservation.obsDt);
+    if (dateDiff !== 0) return dateDiff;
 
-  for (const [, bird] of birdMap) {
-    const dedupedByChecklistOrPoint = new Map();
-
-    for (const location of bird.locations) {
-      const key = location.subId
-        ? `sub:${location.subId}`
-        : `pt:${location.locName}|${location.obsDt}|${location.lat}|${location.lng}`;
-
-      const existing = dedupedByChecklistOrPoint.get(key);
-
-      if (!existing || parseObsDate(location.obsDt) > parseObsDate(existing.obsDt)) {
-        dedupedByChecklistOrPoint.set(key, location);
-      }
-    }
-
-    const sortedLocations = Array.from(dedupedByChecklistOrPoint.values())
-      .map((location) => ({
-        ...location,
-        distanceKm: haversine(startPoint.lat, startPoint.lng, location.lat, location.lng)
-      }))
-      .sort((a, b) => {
-        const dateDiff = parseObsDate(b.obsDt) - parseObsDate(a.obsDt);
-        if (dateDiff !== 0) {
-          return dateDiff;
-        }
-        return a.distanceKm - b.distanceKm;
-      })
-      .slice(0, 5);
-
-    birds.push({
-      sciName: bird.sciName,
-      comName: bird.comName,
-      latestObs: sortedLocations[0] ? parseObsDate(sortedLocations[0].obsDt) : 0,
-      nearestDistanceKm: sortedLocations.length
-        ? Math.min(...sortedLocations.map((location) => location.distanceKm))
-        : Infinity,
-      locations: sortedLocations
-    });
-  }
-
-  birds.sort((a, b) => {
-    const dateDiff = b.latestObs - a.latestObs;
-    if (dateDiff !== 0) {
-      return dateDiff;
-    }
-    return a.nearestDistanceKm - b.nearestDistanceKm;
+    const aDistance = haversine(startPoint.lat, startPoint.lng, a.initialObservation.lat, a.initialObservation.lng);
+    const bDistance = haversine(startPoint.lat, startPoint.lng, b.initialObservation.lat, b.initialObservation.lng);
+    return aDistance - bDistance;
   });
 
   return birds;
+}
+
+function renderObservationBlock(observation) {
+  const mapsUrl = getLocationUrl(observation);
+  const checklistUrl = getChecklistUrl(observation);
+  const checklistHtml = checklistUrl
+    ? `<a href="${checklistUrl}" target="_blank" rel="noopener noreferrer">Checklist</a>`
+    : `<span class="disabled-link">Checklist</span>`;
+
+  const countText =
+    observation.howMany === null || observation.howMany === undefined || observation.howMany === ""
+      ? "Unknown"
+      : observation.howMany;
+
+  return `
+    <div class="observation-block">
+      <div class="bird-location">• ${escapeHtml(observation.locName || "Unknown location")}</div>
+      <div class="bird-links-row">
+        <span>${escapeHtml(formatObsDate(observation.obsDt))}</span>
+        <span>—</span>
+        ${checklistHtml}
+      </div>
+      <div class="bird-links-row">
+        <a href="${getLocationUrl(observation)}" target="_blank" rel="noopener noreferrer">Map</a>
+      </div>
+      <div class="bird-count">Count: ${escapeHtml(countText)}</div>
+    </div>
+  `;
 }
 
 function renderResults(birds, rawCount) {
@@ -419,38 +428,32 @@ function renderResults(birds, rawCount) {
   }
 
   for (const bird of birds) {
-    for (const location of bird.locations) {
-      const li = document.createElement("li");
-      li.className = "bird-result";
+    const li = document.createElement("li");
+    li.className = "bird-result";
+    li.id = `bird-${bird.speciesCode}`;
 
-      const mapsUrl = getLocationUrl(location);
-      const checklistUrl = getChecklistUrl(location);
-      const checklistHtml = checklistUrl
-        ? `<a href="${checklistUrl}" target="_blank" rel="noopener noreferrer">Checklist</a>`
-        : `<span class="disabled-link">Checklist</span>`;
+    li.innerHTML = `
+      <div class="bird-name">
+        ${escapeHtml(bird.comName)} <span class="sci-name">(${escapeHtml(bird.sciName)})</span>
+      </div>
 
-      li.innerHTML = `
-        <div class="bird-name">
-          ${escapeHtml(bird.comName)} <span class="sci-name">(${escapeHtml(bird.sciName)})</span>
-        </div>
+      <div class="bird-observations" id="obs-${bird.speciesCode}">
+        ${renderObservationBlock(bird.initialObservation)}
+      </div>
 
-        <div class="bird-location">• ${escapeHtml(location.locName || "Unknown location")}</div>
+      <div class="bird-actions">
+        <button
+          class="text-button"
+          id="toggle-${bird.speciesCode}"
+          onclick="toggleMoreLocations('${bird.speciesCode}')"
+        >
+          More locations
+        </button>
+        <span class="meta" id="status-${bird.speciesCode}"></span>
+      </div>
+    `;
 
-        <div class="bird-links-row">
-          <span>${escapeHtml(formatObsDate(location.obsDt))}</span>
-          <span>—</span>
-          ${checklistHtml}
-        </div>
-
-        <div class="bird-links-row">
-          <a href="${mapsUrl}" target="_blank" rel="noopener noreferrer">Map</a>
-        </div>
-
-        <div class="bird-count">Count: ${escapeHtml(location.howMany ?? "Unknown")}</div>
-      `;
-
-      list.appendChild(li);
-    }
+    list.appendChild(li);
   }
 }
 
@@ -470,15 +473,16 @@ async function findBirds() {
     return;
   }
 
+  speciesLocationCache.clear();
+  currentBirds = [];
+
   const radius = Number(document.getElementById("radius").value || 20);
   const daysBack = Number(document.getElementById("daysBack").value || 7);
-  const results = document.getElementById("results");
+  const list = document.getElementById("results");
   const summary = document.getElementById("resultsSummary");
 
-  results.innerHTML = "<li>Searching…</li>";
-  if (summary) {
-    summary.textContent = "";
-  }
+  list.innerHTML = "<li>Searching…</li>";
+  if (summary) summary.textContent = "";
 
   const url = `https://api.ebird.org/v2/data/obs/geo/recent?lat=${encodeURIComponent(startPoint.lat)}&lng=${encodeURIComponent(startPoint.lng)}&dist=${encodeURIComponent(radius)}&back=${encodeURIComponent(daysBack)}&maxResults=1000`;
 
@@ -499,17 +503,97 @@ async function findBirds() {
       throw new Error("Unexpected eBird response.");
     }
 
-    const groupedBirds = groupLiferObservations(data);
-    renderResults(groupedBirds, data.length);
+    currentBirds = buildBirdListFromInitialResults(data);
+    renderResults(currentBirds, data.length);
   } catch (error) {
     console.error(error);
-    results.innerHTML = "";
-    if (summary) {
-      summary.textContent = "";
-    }
+    list.innerHTML = "";
 
     const li = document.createElement("li");
     li.textContent = "There was a problem loading birds. Check your API key and try again.";
-    results.appendChild(li);
+    list.appendChild(li);
+  }
+}
+
+async function toggleMoreLocations(speciesCode) {
+  const container = document.getElementById(`obs-${speciesCode}`);
+  const button = document.getElementById(`toggle-${speciesCode}`);
+  const status = document.getElementById(`status-${speciesCode}`);
+
+  if (!container || !button || !status) {
+    return;
+  }
+
+  const bird = currentBirds.find((item) => item.speciesCode === speciesCode);
+  if (!bird) {
+    return;
+  }
+
+  // Collapse if already expanded
+  if (button.dataset.expanded === "true") {
+    container.innerHTML = renderObservationBlock(bird.initialObservation);
+    button.textContent = "More locations";
+    button.dataset.expanded = "false";
+    status.textContent = "";
+    return;
+  }
+
+  // Use cache if already loaded
+  if (speciesLocationCache.has(speciesCode)) {
+    const cachedObservations = speciesLocationCache.get(speciesCode);
+    container.innerHTML = cachedObservations.map(renderObservationBlock).join("");
+    button.textContent = "Show less";
+    button.dataset.expanded = "true";
+    status.textContent = `${cachedObservations.length} recent location${cachedObservations.length === 1 ? "" : "s"}`;
+    return;
+  }
+
+  if (!startPoint) {
+    alert("Choose a search point first.");
+    return;
+  }
+
+  const radius = Number(document.getElementById("radius").value || 20);
+  const daysBack = Number(document.getElementById("daysBack").value || 7);
+
+  button.disabled = true;
+  status.textContent = "Loading…";
+
+  const url = `https://api.ebird.org/v2/data/obs/geo/recent/${encodeURIComponent(speciesCode)}?lat=${encodeURIComponent(startPoint.lat)}&lng=${encodeURIComponent(startPoint.lng)}&dist=${encodeURIComponent(radius)}&back=${encodeURIComponent(daysBack)}&maxResults=50`;
+
+  try {
+    const response = await fetch(url, {
+      headers: {
+        "X-eBirdApiToken": apiKey
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error(`Species request failed with status ${response.status}`);
+    }
+
+    const data = await response.json();
+
+    if (!Array.isArray(data)) {
+      throw new Error("Unexpected species response.");
+    }
+
+    const filtered = data.filter((obs) => obs && obs.sciName === bird.sciName);
+    const deduped = dedupeObservations(filtered)
+      .sort(sortObservationsMostRecentFirst)
+      .slice(0, 5);
+
+    const finalObservations = deduped.length ? deduped : [bird.initialObservation];
+
+    speciesLocationCache.set(speciesCode, finalObservations);
+    container.innerHTML = finalObservations.map(renderObservationBlock).join("");
+    button.textContent = "Show less";
+    button.dataset.expanded = "true";
+    status.textContent = `${finalObservations.length} recent location${finalObservations.length === 1 ? "" : "s"}`;
+  } catch (error) {
+    console.error(error);
+    status.textContent = "Could not load more locations.";
+  } finally {
+    button.disabled = false;
   }
 }

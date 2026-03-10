@@ -107,19 +107,6 @@ ul {
   margin: 0;
 }
 
-li {
-  background: #f8fbf8;
-  border: 1px solid #e1e8e1;
-  border-radius: 12px;
-  padding: 12px;
-  margin-bottom: 10px;
-}
-
-li strong,
-li .meta {
-  display: block;
-}
-
 .bird-result {
   background: #ffffff;
   border: 1px solid #e1e8e1;
@@ -131,12 +118,21 @@ li .meta {
 
 .bird-name {
   font-weight: 700;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .sci-name {
   font-weight: 400;
   font-style: italic;
+}
+
+.bird-observations {
+  display: grid;
+  gap: 10px;
+}
+
+.observation-block {
+  padding-top: 2px;
 }
 
 .bird-location {
@@ -151,12 +147,14 @@ li .meta {
   color: #536053;
 }
 
-.bird-links-row a {
+.bird-links-row a,
+.text-button {
   color: #1b5e20;
   text-decoration: none;
 }
 
-.bird-links-row a:hover {
+.bird-links-row a:hover,
+.text-button:hover {
   text-decoration: underline;
 }
 
@@ -164,38 +162,20 @@ li .meta {
   color: #7a857a;
 }
 
-.locations-list {
+.bird-actions {
   margin-top: 10px;
-  display: grid;
-  gap: 8px;
-}
-
-.location-row {
   display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 10px;
-  border: 1px solid #e6ece6;
-  border-radius: 10px;
-  background: #ffffff;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.location-title {
-  font-weight: 600;
-}
-
-.link-row {
-  white-space: nowrap;
-  align-self: center;
-}
-
-.link-row a {
-  color: #1b5e20;
-  text-decoration: none;
-}
-
-.link-row a:hover {
-  text-decoration: underline;
+.text-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
 }
 
 .hidden {
@@ -205,14 +185,5 @@ li .meta {
 @media (max-width: 640px) {
   #map {
     height: 320px;
-  }
-
-  .location-row {
-    flex-direction: column;
-  }
-
-  .link-row {
-    white-space: normal;
-    align-self: flex-start;
   }
 }
