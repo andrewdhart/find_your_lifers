@@ -1,77 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bird Chaser</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <title>Bird Chaser</title>
 
-<link rel="manifest" href="manifest.json">
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  >
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
-
 <body>
+  <header>
+    <h1>Bird Chaser</h1>
+    <p class="subtitle">Find likely lifers near a point without exposing your API key.</p>
+  </header>
 
-<h2>Bird Chaser</h2>
+  <main>
+    <section id="apikeyScreen" class="panel">
+      <div class="stack">
+        <h2>Enter your eBird API key</h2>
+        <input
+          id="apikeyInput"
+          type="password"
+          placeholder="Paste your eBird API key"
+          autocomplete="off"
+          spellcheck="false"
+        >
+        <div class="controls wrap">
+          <button onclick="saveKey()">Start App</button>
+        </div>
+        <p class="help-text">Get a key from eBird’s API key page.</p>
+      </div>
+    </section>
 
-<div id="apikeyScreen">
+    <section id="app" class="hidden">
+      <section class="panel stack">
+        <h2>Life list</h2>
+        <p id="lifeListStatus">No cached life list yet.</p>
 
-<h3>Enter eBird API Key</h3>
+        <div class="controls wrap">
+          <input
+            id="lifeFile"
+            type="file"
+            accept=".csv,text/csv"
+            onchange="handleLifeListImport(event)"
+          >
+          <button class="secondary" onclick="clearLifeListCache()">Clear Cached Life List</button>
+          <button class="secondary" onclick="changeKey()">Change API Key</button>
+        </div>
 
-<input id="apikeyInput" placeholder="Paste API key">
+        <p class="help-text">
+          Import your eBird downloaded CSV once. It will be cached in this browser.
+        </p>
+      </section>
 
-<br><br>
+      <section class="panel stack">
+        <h2>Search</h2>
 
-<button onclick="saveKey()">Start App</button>
+        <div class="controls wrap">
+          <label for="radius">Radius</label>
+          <select id="radius">
+            <option value="10">10 km</option>
+            <option value="20" selected>20 km</option>
+            <option value="50">50 km</option>
+          </select>
 
-<p>Get a key: https://ebird.org/api/keygen</p>
+          <label for="daysBack">Days back</label>
+          <select id="daysBack">
+            <option value="1">1 day</option>
+            <option value="3">3 days</option>
+            <option value="7" selected>7 days</option>
+            <option value="14">14 days</option>
+            <option value="30">30 days</option>
+          </select>
 
-</div>
+          <button onclick="findBirds()">Find Lifers</button>
+        </div>
 
-<div id="app" style="display:none">
+        <p class="help-text">
+          Click the map to choose your search point. Each bird will show up to 5 recent locations,
+          sorted from most recent to least recent.
+        </p>
+      </section>
 
-<div class="controls">
+      <section class="panel">
+        <div id="map"></div>
+      </section>
 
-<input type="file" id="lifeFile" accept=".csv">
+      <section class="panel stack">
+        <div class="controls wrap">
+          <strong>Results</strong>
+          <span id="resultsSummary" class="meta"></span>
+        </div>
+        <ul id="results"></ul>
+      </section>
+    </section>
+  </main>
 
-<button onclick="importLifeList()">Import Life List</button>
-
-<button onclick="clearLifeList()">Clear Cached Life List</button>
-
-<button onclick="changeKey()">Change API Key</button>
-
-</div>
-
-<div id="map"></div>
-
-<div class="controls">
-
-Radius:
-
-<select id="radius">
-<option value="10">10 km</option>
-<option value="20" selected>20 km</option>
-<option value="50">50 km</option>
-</select>
-
-<button onclick="findBirds()">Find Lifers</button>
-
-</div>
-
-<ul id="results"></ul>
-
-</div>
-
-<script src="app.js"></script>
-
-<script>
-if("serviceWorker" in navigator){
-navigator.serviceWorker.register("sw.js")
-}
-</script>
-
+  <script src="app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
 </body>
 </html>

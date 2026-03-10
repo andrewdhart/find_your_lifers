@@ -1,23 +1,174 @@
-body{
-font-family:Arial;
-margin:10px;
+:root {
+  color-scheme: light;
 }
 
-#map{
-height:420px;
-margin-bottom:10px;
+* {
+  box-sizing: border-box;
 }
 
-.controls{
-margin-bottom:10px;
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  background: #f4f7f4;
+  color: #152015;
 }
 
-ul{
-list-style:none;
-padding:0;
+header {
+  padding: 20px 16px 8px;
+  text-align: center;
 }
 
-li{
-padding:6px;
-border-bottom:1px solid #ddd;
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 12px 24px;
+}
+
+.panel {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  margin: 12px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.subtitle,
+.help-text,
+#lifeListStatus,
+.meta {
+  color: #536053;
+}
+
+.stack {
+  display: grid;
+  gap: 10px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+input,
+select {
+  padding: 10px 12px;
+  border: 1px solid #c7d1c7;
+  border-radius: 10px;
+  background: #fff;
+}
+
+input[type="password"] {
+  width: 100%;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 10px;
+  background: #2e7d32;
+  color: white;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #607060;
+}
+
+button:hover {
+  opacity: 0.95;
+}
+
+#map {
+  height: 380px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: #f8fbf8;
+  border: 1px solid #e1e8e1;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+li strong,
+li .meta {
+  display: block;
+}
+
+.locations-list {
+  margin-top: 10px;
+  display: grid;
+  gap: 8px;
+}
+
+.location-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px;
+  border: 1px solid #e6ece6;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.location-title {
+  font-weight: 600;
+}
+
+.link-row {
+  white-space: nowrap;
+  align-self: center;
+}
+
+.link-row a {
+  color: #1b5e20;
+  text-decoration: none;
+}
+
+.link-row a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  #map {
+    height: 320px;
+  }
+
+  .location-row {
+    flex-direction: column;
+  }
+
+  .link-row {
+    white-space: normal;
+    align-self: flex-start;
+  }
 }
