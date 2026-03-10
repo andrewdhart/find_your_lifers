@@ -30,7 +30,6 @@
         <div class="controls wrap">
           <button onclick="saveKey()">Start App</button>
         </div>
-        <p class="help-text">Get a key from eBird’s API key page.</p>
       </div>
     </section>
 
@@ -49,16 +48,18 @@
           <button class="secondary" onclick="clearLifeListCache()">Clear Cached Life List</button>
           <button class="secondary" onclick="changeKey()">Change API Key</button>
         </div>
-
-        <p class="help-text">
-          Import your downloaded eBird CSV once. It will be cached in this browser.
-        </p>
       </section>
 
       <section class="panel stack">
         <h2>Search</h2>
 
         <div class="controls wrap">
+          <label for="searchMode">Mode</label>
+          <select id="searchMode" onchange="handleModeChange()">
+            <option value="point" selected>Single point</option>
+            <option value="route">Route</option>
+          </select>
+
           <label for="radius">Radius</label>
           <select id="radius">
             <option value="10">10 km</option>
@@ -75,12 +76,20 @@
             <option value="30">30 days</option>
           </select>
 
+          <label for="sampleSpacing">Route spacing</label>
+          <select id="sampleSpacing">
+            <option value="5">5 km</option>
+            <option value="10" selected>10 km</option>
+            <option value="20">20 km</option>
+            <option value="30">30 km</option>
+          </select>
+
           <button onclick="findBirds()">Find Lifers</button>
+          <button class="secondary" onclick="clearMapPoints()">Clear Map Points</button>
         </div>
 
-        <p class="help-text">
-          Click the map to choose your search point. Each bird starts with one recent location,
-          and you can click “More locations” to load up to 5 recent spots for that species.
+        <p id="modeHelp" class="help-text">
+          Single point mode: click the map to choose one search point.
         </p>
       </section>
 

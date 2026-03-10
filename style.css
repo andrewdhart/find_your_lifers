@@ -18,12 +18,6 @@ header {
   text-align: center;
 }
 
-h1,
-h2,
-p {
-  margin-top: 0;
-}
-
 main {
   max-width: 960px;
   margin: 0 auto;
@@ -36,13 +30,6 @@ main {
   padding: 16px;
   margin: 12px 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-}
-
-.subtitle,
-.help-text,
-#lifeListStatus,
-.meta {
-  color: #536053;
 }
 
 .stack {
@@ -58,6 +45,15 @@ main {
 
 .wrap {
   flex-wrap: wrap;
+}
+
+.subtitle,
+.help-text,
+#lifeListStatus,
+.meta,
+.bird-count,
+.bird-sample {
+  color: #536053;
 }
 
 input,
@@ -89,10 +85,6 @@ button {
 
 button.secondary {
   background: #607060;
-}
-
-button:hover {
-  opacity: 0.95;
 }
 
 #map {
@@ -143,10 +135,6 @@ ul {
   margin-bottom: 2px;
 }
 
-.bird-count {
-  color: #536053;
-}
-
 .bird-links-row a,
 .text-button {
   color: #1b5e20;
@@ -156,10 +144,6 @@ ul {
 .bird-links-row a:hover,
 .text-button:hover {
   text-decoration: underline;
-}
-
-.disabled-link {
-  color: #7a857a;
 }
 
 .bird-actions {
@@ -175,7 +159,10 @@ ul {
   border: none;
   padding: 0;
   cursor: pointer;
-  font: inherit;
+}
+
+.disabled-link {
+  color: #7a857a;
 }
 
 .hidden {

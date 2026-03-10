@@ -1,4 +1,4 @@
-const CACHE = "birdchaser-v5";
+const CACHE = "birdchaser-v6";
 
 const FILES = [
   "./",
